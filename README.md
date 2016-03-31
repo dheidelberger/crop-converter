@@ -49,13 +49,13 @@ Usage is quite simple.
 - Open the Terminal on a Mac or the Command Prompt on Windows. For Macs, this is in Applications>Utilities.
 - At the prompt, type `ruby` and then a space
 - Drag-and-drop the CropConverter.rb file onto the terminal window. This will paste in some text showing the path to the Ruby file.
-- Optionally, set the framerate with the `-f` or `--framerate` flags. Acceptable values are: 23.976, 23.98, 24, 25, 29.97, 30, 50, 59.94, or 60. If you don't set the framerate, by default, it will be 29.97, There is also a way to change the default value, see below. So, for example, if you wanted the XML to be 59.94fps, right after ```ruby [PATH TO RUBY FILE\```, put a space and type `-f 59.94 `.
+- Optionally, set the framerate with the `-f` or `--framerate` flags. Acceptable values are: 23.976, 23.98, 24, 25, 29.97, 30, 50, 59.94, or 60. If you don't set the framerate, by default, it will be 29.97, There is also a way to change the default value, see below. So, for example, if you wanted the XML to be 59.94fps, right after ```ruby [PATH TO RUBY FILE]```, put a space and type `-f 59.94 `.
 - Make another space
 - Drag-and-drop as many PSD files as you like onto the Termianl window. It will paste in a list of files separated by spaces.
 - Press enter
 - When the program is done, there will be an XML file next to every PSD file. Just drag those XMLs into Premiere and you'll be all set.
 
-As an example, here is a full command from my computer. In this example, we'll assume that the CropConverter.rb file is in my Documents folder, I want a framerate of 24, and I'm using two files on my Desktop called `Bullet 1.psd` and `Bullet 2.psd`.
+As an example, here is a full command from my computer. In this example, we'll assume that the CropConverter.rb file is in my Documents folder, I want a framerate of 24, and I'm using two files on my Desktop called `Bullet 1.psd` and `Bullet 2.psd`. The username on my computer is `davidheidelberger`. Obviously, this will be different on your computer and you'll have to change the username accordingly. By dragging and dropping the various files in, you should be able to avoid having to type any sort of username or folder structure at all.
 ```Bash
 ruby /Users/davidheidelberger/Documents/CropConverter.rb -f 24  /Users/davidheidelberger/Desktop/Bullet\ 1.psd /Users/davidheidelberger/Desktop/Bullet\ 2.psd
 ```
