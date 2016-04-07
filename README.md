@@ -1,7 +1,7 @@
 # Crop Converter
 
 ##### What is it?
-Crop Converter is a simple Ruby script to convert horizontal guides in a PSD file into a series of crop effects in Adobe Premiere.
+Crop Converter is a simple Ruby script to convert horizontal guides in a PSD file into a series of crop effects in Adobe Premiere using a Final Cut Pro XML
 
 ##### Why would I need that?
 In a word (or two), *bullet points.* In a few more words, I often do work for a client where I have a lot of bullet points that need to incrementally appear. I make a PSD of the bullet points, very quickly make a series of horizontal guides between each line, and then run it through this script. The script generates an XML file that can be brought into Premiere. The XML consists of a timeline with several copies of the PSD file. Each clip is cropped to one of the guides that I set up in Photoshop.
@@ -39,6 +39,8 @@ In that case, it will prompt you for your password. Enter your password and pres
 
 Once the gems are installed, you shouldn't need to install them again unless you change your Ruby version.
 
+A note for power Ruby users: At some point, I intend to add Bundler support which will make this step a bit easier, but I don't have the time right now.
+
 ##### Windows
 If you're on Windows, um, yeah, install the gems...however it is you do that on Windows (can you tell I'm a Mac guy?). You should be able to follow the same steps as above from the command prompt.
 
@@ -51,7 +53,7 @@ Usage is quite simple.
 - Drag-and-drop the CropConverter.rb file onto the terminal window. This will paste in some text showing the path to the Ruby file.
 - Optionally, set the framerate with the `-f` or `--framerate` flags. Acceptable values are: 23.976, 23.98, 24, 25, 29.97, 30, 50, 59.94, or 60. If you don't set the framerate, by default, it will be 29.97, There is also a way to change the default value, see below. So, for example, if you wanted the XML to be 59.94fps, right after ```ruby [PATH TO RUBY FILE]```, put a space and type `-f 59.94 `.
 - Make another space
-- Drag-and-drop as many PSD files as you like onto the Termianl window. It will paste in a list of files separated by spaces.
+- Drag-and-drop as many PSD files as you like onto the Terminal window. It will paste in a list of files separated by spaces.
 - Press enter
 - When the program is done, there will be an XML file next to every PSD file. Just drag those XMLs into Premiere and you'll be all set.
 
