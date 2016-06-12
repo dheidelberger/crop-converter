@@ -161,7 +161,7 @@ def xml_file(my_file,options)
 	#Get the guides
 	#Only get the horizontal ones (select command)
 	#Convert to percent for bottom crop (map command)
-	guides = psd_hash[:document][:resources][:guides].select{|guide| guide[:direction]=="horizontal"}.map {|guide| (100*(heightf - guide[:location])/heightf).round(3)}
+	guides = psd_hash[:document][:resources][:guides].select{|guide| guide[:direction]=="horizontal"}.map {|guide| (100*(heightf - guide[:location])/heightf).round(3)}.sort.reverse
 
 	#Add a final guide for the last uncropped clip
 	guides << 0
