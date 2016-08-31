@@ -7,8 +7,7 @@ Crop Converter is a simple Ruby script to convert horizontal guides in a PSD fil
 In a word (or two), *bullet points.* In a few more words, I often do work for a client where I have a lot of bullet points that need to incrementally appear. I make a PSD of the bullet points, very quickly make a series of horizontal guides between each line, and then run it through this script. The script generates an XML file that can be brought into Premiere. The XML consists of a timeline with several copies of the PSD file. Each clip is cropped to one of the guides that I set up in Photoshop.
 
 ##### I still don't understand
-It's kind of hard to describe, but here's a quick video demonstrating the concept:
-*video tbd*
+It's kind of hard to describe, but [here's a quick video](https://vimeo.com/180926598/9af0325e09) demonstrating the concept and explaining how to install and use Crop Converter.
 
 #
 #
