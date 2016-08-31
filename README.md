@@ -13,7 +13,7 @@ It's kind of hard to describe, but here's a quick video demonstrating the concep
 #
 #
 ### Requirements
-Crop Converter requires Ruby. If you're on a Mac, you're in luck, Macs include Ruby by default. However, Macs running an OS X version that's older than Mavericks (10.9), may have an older version of Ruby installed that won't work with this script. If you're in that situation, upgrading to a new version of Ruby is quite easy using  [RVM](https://rvm.io/), which is the way I recommend working with Ruby anyway. If you're on Windows, er, honestly, you're kind of [on your own](http://rubyinstaller.org/).
+Crop Converter requires Ruby. If you're on a Mac, you're in luck, Macs include Ruby by default. However, Macs running an OS X version that's older than Mavericks (10.9), may have an older version of Ruby installed that won't work with this script. If you're in that situation, upgrading to a new version of Ruby is quite easy using [RVM](https://rvm.io/), which is the way I recommend working with Ruby anyway. If you're on Windows, er, honestly, you're kind of [on your own](http://rubyinstaller.org/). There are a number of other components you need to install first to make RVM work on your Mac. There's a really good guide [here](http://railsapps.github.io/installrubyonrails-mac.html). Follow it up to and including the "Install Ruby" step. You can skip the "Configure Git" step.
 
 Crop Converter also requires two Ruby gems in order to work. Gems are add-on libraries that other people have written for Ruby. See the Installation section for how to install gems. Crop Converter uses:
 - [PSD](https://github.com/layervault/psd.rb) - A gem for parsing PSD files
